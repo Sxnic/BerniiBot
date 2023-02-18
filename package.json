@@ -5,12 +5,11 @@
   "private": true,
   "scripts": {
     "build": "tsc",
-    "prod": "tsc && node dist/main.js",
     "start": "tsx src/main.ts",
     "dev": "tsx watch src/main.ts"
   },
   "author": "Sxnic <tupped@protonmail.com>",
-  "license": "GPL-3.0-only",
+  "license": "MIT",
   "type": "module",
   "dependencies": {
     "dotenv": "^16.0.3",
