@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "target": "ESNext",
+    "esModuleInterop": true,
+    "importHelpers": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    // Typescript options
+    "strict": true,
+    "importsNotUsedAsValues": "error"
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
