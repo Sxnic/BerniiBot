@@ -1,6 +1,6 @@
 // -- BerniiBot --
 import Eris from 'eris'
-import { env } from './env'
+import { env } from './env.js'
 
 // -- Config --
 const bot = Eris(env.TOKEN, { intents: ['guilds', 'guildMessages'], maxShards: 'auto' })
