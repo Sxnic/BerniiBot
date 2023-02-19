@@ -3,7 +3,10 @@ import Eris from 'eris'
 import { env } from './env.js'
 
 // -- Config --
-const bot = Eris(env.TOKEN, { intents: ['guilds', 'guildMessages'], maxShards: 'auto' })
+const bot = Eris(env.TOKEN, {
+    intents: ['guilds', 'guildMessages', 'guildMessageReactions'],
+    maxShards: 'auto'
+})
 
 // -- Event listeners --
 // Ready
@@ -16,7 +19,7 @@ bot.on('ready', async () => {
     console.log('BerniiBot, reporting in!')
 
     // Set the bot status
-    bot.editStatus({ name: 'https://gitub.com/Sxnic/BerniiBot', type: 0 })
+    bot.editStatus({ name: 'https://github.com/Sxnic/BerniiBot', type: 0 })
 })
 
 // Error
